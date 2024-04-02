@@ -1,2 +1,2 @@
-# Read me Portfólio:
-Meu portfólio no Github Pages
+# Readme:
+Meu portfólio no Github Pages: EM DESENVOLVIMENTO!
