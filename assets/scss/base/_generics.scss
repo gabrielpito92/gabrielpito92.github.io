@@ -1,0 +1,211 @@
+//cores
+.primaria{color: $primaria;}
+.secundaria{color: $secundaria;}
+.terciaria{color: $terciaria;}
+.branco{color: $branco!important;}
+.cinza{color: $cinza!important;}
+.cinza-claro{color: $cinza-claro!important;}
+
+//bgs
+.bg-primaria{background-color: $primaria;}
+.bg-secundaria{background-color: $secundaria;}
+.bg-terciaria{background-color: $terciaria;}
+.bg-cinza{background-color: $cinza;}
+.bg-cinza-claro{background-color: $cinza-claro;}
+.bg-branco{background-color: $branco;}
+
+.fontsite-regular{
+    font-family: $fontsite-regular;
+
+    &.bold{
+        font-weight: 700;
+    }
+}
+
+// tamanhos
+.font7{font-size: (7 / 16) * 1em!important;}
+.font8{font-size: (8 / 16) * 1em!important;}
+.font10{font-size: (10 / 16) * 1em!important;}
+.font11{font-size: (11 / 16) * 1em!important;}
+.font12{font-size: 0.750em!important;}
+.font13{font-size: (13 / 16) * 1em!important;}
+.font14{font-size: 0.875em!important;}
+.font15{font-size: (15 / 16) * 1em!important;}
+.font16{font-size: (16 / 16) * 1em!important;}
+.font18{font-size: (18 / 16) * 1em!important;}
+.font19{font-size: (19 / 16) * 1em!important;}
+.font20{font-size: (20 / 16) * 1em!important;}
+.font21{font-size: (21 / 16) * 1em!important;}
+.font22{font-size: (22 / 16) * 1em!important;}
+.font24{font-size: (24 / 16) * 1em!important;}
+.font25{font-size: (25 / 16) * 1em!important;}
+.font26{font-size: (26 / 16) * 1em!important;}
+.font27{font-size: (27 / 16) * 1em!important;}
+.font28{font-size: (28 / 16) * 1em!important;}
+.font30{font-size: (30 / 16) * 1em!important;}
+.font32{font-size: (32 / 16) * 1em!important;}
+.font36{font-size: (36 / 16) * 1em!important;}
+.font40{font-size: (40 / 16) * 1em!important;}
+.font42{font-size: (42 / 16) * 1em!important;}
+.font50{font-size: (50 / 16) * 1em!important;}
+
+.grow{
+    -webkit-transform:scale(0.99); /* prefixo para browsers webkit */
+    -moz-transform:scale(0.99); /* prefixo para browsers gecko */
+    -o-transform:scale(0.99); /* prefixo para opera */
+    transform:scale(0.99);
+  
+    transition: all 0.5s ease;
+  
+    &:hover{
+      -webkit-transform:scale(1); /* prefixo para browsers webkit */
+      -moz-transform:scale(1); /* prefixo para browsers gecko */
+      -o-transform:scale(1); /* prefixo para opera */
+      transform:scale(1);
+    }
+  }
+
+  .giro{
+    /* transições (animações)*/
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+  
+    /*qualidade da imagem*/
+    image-rendering: optimizeQuality;
+  
+    &:hover{
+    /*rotação*/
+    -moz-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    -webkit-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    -o-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    -ms-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    }
+  }
+  
+  a:hover >img.giro{
+    -moz-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    -webkit-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    -o-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    -ms-transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+    transform: rotate(360deg) translateX(1px) translateY(1px) skewX(1deg) skewY(1deg);
+  }
+
+  @-webkit-keyframes swing{
+    15%{
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%{
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%{
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%{
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%{
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing{
+    15%{
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%{
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%{
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%{
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%{
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
+
+.balanco:hover{
+  // transform: rotateZ(10deg);
+  -webkit-animation: balanco 1s ease;
+  animation: balanco 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes balanco {
+    15%{
+        -webkit-transform: rotateZ(5deg);
+        transform: rotateZ(5deg);
+    }
+    30%{
+        -webkit-transform: rotateZ(-5deg);
+        transform: rotateZ(-5deg);
+    }
+    50%{
+        -webkit-transform: rotateZ(3deg);
+        transform: rotateZ(3deg);
+    }
+    65%{
+        -webkit-transform: rotateZ(-3deg);
+        transform: rotateZ(-3deg);
+    }
+    80%{
+        -webkit-transform: rotateZ(2deg);
+        transform: rotateZ(2deg);
+    }
+    100%{
+        -webkit-transform: rotateZ(0);
+        transform: rotateZ(0);
+    }
+}

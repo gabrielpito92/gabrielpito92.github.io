@@ -1,0 +1,66 @@
+//caminho pastas
+$urlimg : '../imgs/';
+$urlfont : '../fonts/';
+
+$fontsite-regular: 'Quicksand', sans-serif;
+
+$primaria:#3F529F;
+$secundaria: #FDC915;
+$terciaria: #43ABCF;
+$branco: #FFF;
+$cinza: #333;
+$cinza-claro: #EEE;
+
+//sprites
+$background-sprites: url('#{$urlimg}sprites.png');
+
+$textdecoration : none;
+
+//body
+$fontsite : $fontsite-regular; //regular padrao
+$tamanhofont : 1em;
+$corfont : $cinza;
+
+$backgroundsite : $branco;
+
+/*SELECAO ========================*/
+::-moz-selection{
+    background:$primaria;
+    color:#FFF;
+      text-shadow:none;
+  }
+  ::selection{
+    background:$primaria;
+    color:#FFF;
+    text-shadow:none;
+  }
+  
+/*PAGE WRAPER==========================*/
+html,body{
+  font-family:$fontsite;
+  font-size: $tamanhofont;
+  color: $corfont;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background:none;
+}
+
+a{
+  color:$corfont;
+
+  &:hover{
+    color:inherit;
+    text-decoration: $textdecoration;
+  }
+
+  &:focus{
+    outline: none!important;
+    text-decoration: $textdecoration;
+  }
+
+  >img{
+      position: relative;
+      top: -2px;
+  }
+}//link
